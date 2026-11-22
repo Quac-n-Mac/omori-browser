@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+html,body{margin:0;padding:0;background:#000;height:100%;overflow:hidden}
+canvas{display:block;margin:auto}
+</style>
+</head>
+<body>
+<script src="js/libs/pixi.js"></script>
+<script src="js/libs/lz-string.js"></script>
+<script src="js/libs/iphone-inline-video.browser.js"></script>
+<!-- inline game data (no XHR on file://) -->
+__DATA_SCRIPTS__
+<script src="js/rpg_core.js"></script>
+<script src="js/rpg_managers.js"></script>
+<script src="js/rpg_objects.js"></script>
+<script src="js/rpg_scenes.js"></script>
+<script src="js/rpg_sprites.js"></script>
+<script src="js/rpg_windows.js"></script>
+__PLUGIN_SCRIPTS__
+<script src="js/loader-shim.js"></script>
+<script src="js/save-transfer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
